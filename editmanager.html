@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Manager</title>
+</head>
+<body>
+    <h1>Edit Manager</h1>
+    <div id="edit-manager-form">
+        <!-- Add the necessary form elements for editing manager details -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" required><br>
+        <label for="status">Status:</label>
+        <select id="status" required>
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+        </select><br>
+        <label for="bio">Bio:</label>
+        <textarea id="bio" required></textarea><br>
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" required><br>
+        <button id="update-button">Update</button>
+
+    </div>
+
+    <script src="editmanagerscript.js"></script>
+</body>
+</html>
