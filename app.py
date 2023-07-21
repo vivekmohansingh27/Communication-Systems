@@ -64,8 +64,6 @@ def update_portfolio_manager(manager_id):
     updated_manager = {
         'fullname': data['fullname'],
         'status': data['status'],
-        'username': data['username'],
-        'password': data['password'],
         'bio': data['bio'],
         'start_date': data['start_date'],
         'projects': data['projects']
@@ -74,7 +72,8 @@ def update_portfolio_manager(manager_id):
     if result.matched_count > 0:
         return jsonify({'message': 'Portfolio Manager updated successfully'})
     else:
-        return jsonify({'message': 'Portfolio Manager not found'})
+        return jsonify({'message': 'Portfolio Manager not found'}), 404
+
     
 
 #......remove

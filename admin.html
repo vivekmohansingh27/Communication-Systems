@@ -5,7 +5,14 @@
     <link rel="stylesheet" type="text/css" href="adminstyle.css">
 </head>
 <body>
-    <h1>Welcome Admin</h1>
+    
+    <nav>
+        <h1>Welcome Admin</h1>
+        <ul>
+            <li><button class="nav-button" onclick="createProject()">Create Project</button></li>
+            <!-- Add other navigation buttons here if needed -->
+        </ul>
+    </nav>
     <div id="manager-table" class="table-container">
         <!-- Table content will be dynamically populated by JavaScript -->
         <table>
@@ -24,7 +31,7 @@
             </tbody>
         </table>
     </div>
-
+    
     <!-- Include the JavaScript file at the end of the body -->
     <script src="adminscript.js"></script>
 </body>
