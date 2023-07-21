@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="signup-box">
+        <h2>Signup</h2>
+        <input type="text" id="fullname" placeholder="Full Name" /><br><br>
+        <input type="text" id="username" placeholder="Username" /><br><br>
+        <input type="password" id="password" placeholder="Password" /><br><br>
+        <select id="status">
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+        </select><br><br>
+        <textarea id="bio" placeholder="Bio"></textarea><br><br>
+        <input type="date" id="start_date" /><br><br>
+        <button onclick="registerManager()">Register Manager</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
